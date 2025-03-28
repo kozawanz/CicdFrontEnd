@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {BaseUrl} from "../constants";
 import axios from "axios";
+import "../App.css";
 
 function Register(props) {
     const [username, setUsername] = useState("")
@@ -54,13 +55,13 @@ function Register(props) {
     }
 
     return (
-        <div>
-            <h1>Register</h1>
-            <p>Username: <input type="text" value={username} onChange={usernameChangeHandler} /> </p>
-            <p>Email: <input type="text" value={email} onChange={emailChangeHandler} /> </p>
-            <p>Password: <input type="password" value={password} onChange={passwordChangeHandler} /> </p>
-            <button onClick={register}>Register</button>
-            <p>{Err}</p>
+        <div className="container content-box">
+          <h1>Register</h1>
+          <input type="text" placeholder="Username" value={username} onChange={(e) => setUsername(e.target.value)} />
+          <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
+          <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} />
+          <button onClick={() => register(username, email, password)}>Register</button>
+          <p>{Err}</p>
         </div>
     );
 }

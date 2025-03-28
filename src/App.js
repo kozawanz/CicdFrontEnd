@@ -5,6 +5,8 @@ import Home from "./components/Home";
 import Register from "./components/Register";
 import Login from "./components/Login";
 import Logout from "./components/Logout";
+import CreateNote from "./components/NoteForm";
+import NoteForm from "./components/NoteForm";
 
 function App() {
   return (
@@ -16,6 +18,7 @@ function App() {
             <Route path="/register" element={<Register />} />
             <Route path="/login" element={<Login />} />
             <Route path="/logout" element={<Logout />} />
+            <Route path="/noteform" element={<NoteForm />} />
           </Routes>
         </BrowserRouter>
       </header>
