@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import axios from "axios";
 import {BaseUrl} from "../constants";
+import "../App.css";
 
 function Login(props) {
     const [username, setUsername] = useState("")
@@ -43,6 +44,7 @@ function Login(props) {
           console.log(JSON.stringify(response.data));
           localStorage.setItem("Token", response.data.token);
           setErr("Login Successful");
+          window.location.href = "/logout";
         })
         .catch((error) => {
           console.log(error);
@@ -51,12 +53,12 @@ function Login(props) {
     }
 
     return (
-        <div>
-            <h1>Login</h1>
-            <p>Username: <input type="text" value={username} onChange={usernameChangeHandler} /> </p>
-            <p>Password: <input type="password" value={password} onChange={passwordChangeHandler} /> </p>
-            <button onClick={login}>Login</button>
-            <p>{Err}</p>
+        <div className="container content-box">
+          <h1>Login</h1>
+          <input type="text" placeholder="Username" value={username} onChange={(e) => setUsername(e.target.value)} />
+          <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} />
+          <button onClick={() => login(username, password)}>Login</button>
+          <p>{Err}</p>
         </div>
     );
 }

@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import axios from "axios";
 import {BaseUrl} from "../constants";
+import "../App.css";
 
 function Logout(props) {
     const [token, setToken] = useState("")
@@ -34,12 +35,10 @@ function Logout(props) {
     }
 
     return (
-        <div>
-            <h1>Logout</h1>
-            <p>
-                <button onClick={logout}>Logout</button>
-            </p>
-            <p>{Err}</p>
+        <div className="container content-box">
+          <h1>Logout</h1>
+          <button onClick={logout}>Logout</button>
+          <p>{Err}</p>
         </div>
     );
 }
