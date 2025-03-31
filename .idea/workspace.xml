@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c92eb979-f63a-460d-bfb2-cd8c2d63ca22" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/EditNoteForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/EditNoteForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/EditNoteForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/NoteList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NoteList.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +50,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "com.codeium.enabled": "true",
-    "git-widget-placeholder": "5-as-a-user-i-want-to-edit-an-existing-note-so-that-i-can-update-the-info…ntend",
+    "git-widget-placeholder": "6-as-a-user-i-want-to-delete-a-note-so-that-i-can-remove-information-i-no…ntend",
     "last_opened_file_path": "C:/Program Files/nodejs",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",

@@ -16,7 +16,7 @@ const EditNoteForm = () => {
             const token = localStorage.getItem('Token');
             try {
                 // Correct template literal syntax for URL
-                const response = await axios.get('http://localhost:8000/api/update/' + id, {
+                const response = await axios.get(BaseUrl+'/api/update/' + id, {
                     headers: {
                         'Authorization': 'Token ' + token
                     }
