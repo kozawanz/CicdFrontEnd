@@ -9,6 +9,7 @@ import CreateNote from "./components/NoteForm";
 import NoteForm from "./components/NoteForm";
 import NoteList from "./components/NoteList";
 import React, {useEffect, useState} from "react";
+import EditNoteForm from "./components/EditNoteForm";
 
 function App() {
   const [token, setToken] = useState(null);
@@ -51,6 +52,7 @@ function App() {
             <Route path="/logout" element={<Logout />} />
             <Route path="/noteform" element={<NoteForm />} />
             <Route path="/notelist" element={<NoteList />} />
+            <Route path="/editnoteform/:id" element={<EditNoteForm />} />
           </Routes>
         </BrowserRouter>
       </header>
