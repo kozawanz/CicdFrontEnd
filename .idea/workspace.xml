@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c92eb979-f63a-460d-bfb2-cd8c2d63ca22" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/NoteList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/EditNoteForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NoteList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NoteList.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +51,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "com.codeium.enabled": "true",
-    "git-widget-placeholder": "7-as-a-user-i-want-to-view-a-list-of-all-my-notes-so-that-i-can-easily-fi…ntend",
+    "git-widget-placeholder": "5-as-a-user-i-want-to-edit-an-existing-note-so-that-i-can-update-the-info…ntend",
     "last_opened_file_path": "C:/Program Files/nodejs",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",

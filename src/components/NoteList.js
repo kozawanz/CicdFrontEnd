@@ -29,6 +29,10 @@ const NotesList = () => {
             });
     }, []);
 
+    function handleEdit(noteId) {
+        window.location.href = "/editnoteform/" + noteId;
+    }
+
     return (
         <div className="container content-box">
             <h2>My Notes</h2>
@@ -40,7 +44,7 @@ const NotesList = () => {
                             <p>{note.content}</p>
                         </div>
                         <div className="note-actions">
-                            <button className="edit-btn">Edit</button>
+                            <button className="edit-btn" onClick={  () => handleEdit(note.id)}>Edit</button>
                             <button className="delete-btn">Delete</button>
                         </div>
                     </li>
