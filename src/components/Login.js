@@ -10,7 +10,7 @@ function Login(props) {
 
     useEffect(() => {
         if(localStorage.getItem("Token") !== null) {
-            window.location.href = "/logout";
+            window.location.href = "/";
         }
     }, []);
 
@@ -44,7 +44,7 @@ function Login(props) {
           console.log(JSON.stringify(response.data));
           localStorage.setItem("Token", response.data.token);
           setErr("Login Successful");
-          window.location.href = "/logout";
+          window.location.href = "/";
         })
         .catch((error) => {
           console.log(error);
