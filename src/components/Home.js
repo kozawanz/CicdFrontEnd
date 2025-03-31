@@ -1,28 +1,30 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {Link} from "react-router-dom";
 import "../App.css";
 
 function Home(props) {
-    return (
-         <div className="container">
-          {/* Navigation Bar */}
-          <nav className="navbar">
-            <h1 className="logo">TODO App</h1>
-            <ul className="nav-links">
-              <li><Link to="/">Home</Link></li>
-              <li><Link to="/register">Register</Link></li>
-              <li><Link to="/login">Login</Link></li>
-              <li><Link to="/noteform">Create Note</Link></li>
-            </ul>
-          </nav>
+    const [token, setToken] = useState(null);
 
-          {/* Main Content */}
-          <div className="content-box">
-            <h2>Welcome to the TODO App</h2>
-            <p>Manage your tasks efficiently with our simple note system.</p>
-          </div>
-        </div>
-    );
+  useEffect(() => {
+    setToken(localStorage.getItem("Token"));
+  }, []);
+
+  return (
+    <div className="home-container">
+      <h1>Welcome to Your TODO App</h1>
+      <p>Organize your tasks efficiently and never forget anything important!</p>
+      <div className="cta-buttons">
+        {token ? (
+          <p>You are logged in. Start managing your tasks!</p>
+        ) : (
+          <>
+            <Link to="/register" className="btn btn-primary">Get Started</Link>
+            <Link to="/login" className="btn btn-secondary">Login</Link>
+          </>
+        )}
+      </div>
+    </div>
+  );
 }
 
 export default Home;
