@@ -8,7 +8,6 @@ import NoteForm from "./components/NoteForm";
 import NoteList from "./components/NoteList";
 import React, {useEffect, useState} from "react";
 import EditNoteForm from "./components/EditNoteForm";
-import {BaseUrl} from "./constants";
 
 function App() {
   const [token, setToken] = useState(null);
