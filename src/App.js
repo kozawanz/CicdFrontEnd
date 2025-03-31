@@ -31,11 +31,11 @@ function App() {
             <h1 className="logo">TODO App</h1>
             <ul className="nav-links">
               <li><Link to="/">Home</Link></li>
-              <li><Link to="/noteform">Create Note</Link></li>
               {token ? (
                  <>
-                    <li><a onClick={handleLogout} className="logout-btn">Logout</a></li>
+                    <li><Link to="/noteform">Create Note</Link></li>
                     <li><Link to="/notelist">My Notes</Link></li>
+                    <li><a onClick={handleLogout} className="logout-btn">Logout</a></li>
                 </>
               ) : (
                 <>
