@@ -1,5 +1,5 @@
 // src/components/NoteForm.js
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import axios from 'axios';
 import {BaseUrl} from "../constants";
 import "../App.css";

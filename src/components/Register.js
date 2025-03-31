@@ -9,18 +9,6 @@ function Register(props) {
     const [password, setPassword] = useState("")
     const [Err, setErr] = useState("")
 
-    function usernameChangeHandler(event) {
-        setUsername(event.target.value)
-    }
-
-    function emailChangeHandler(event) {
-        setEmail(event.target.value)
-    }
-
-    function passwordChangeHandler(event) {
-        setPassword(event.target.value)
-    }
-
     function register(event) {
         if(username === "" || email === "" || password === "") {
             setErr("All fields are required")

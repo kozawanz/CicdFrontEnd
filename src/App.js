@@ -1,15 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
 import {BrowserRouter, Link, Route, Routes} from "react-router-dom";
 import Home from "./components/Home";
 import Register from "./components/Register";
 import Login from "./components/Login";
 import Logout from "./components/Logout";
-import CreateNote from "./components/NoteForm";
 import NoteForm from "./components/NoteForm";
 import NoteList from "./components/NoteList";
 import React, {useEffect, useState} from "react";
 import EditNoteForm from "./components/EditNoteForm";
+import {BaseUrl} from "./constants";
 
 function App() {
   const [token, setToken] = useState(null);
@@ -35,7 +34,7 @@ function App() {
                  <>
                     <li><Link to="/noteform">Create Note</Link></li>
                     <li><Link to="/notelist">My Notes</Link></li>
-                    <li><a onClick={handleLogout} className="logout-btn">Logout</a></li>
+                    <li><a href="/login" onClick={(e) => { e.preventDefault(); handleLogout(); }} className="logout-btn">Logout</a></li>
                 </>
               ) : (
                 <>

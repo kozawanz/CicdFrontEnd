@@ -15,14 +15,6 @@ function Login(props) {
     }, []);
 
 
-    function usernameChangeHandler(event) {
-        setUsername(event.target.value)
-    }
-
-    function passwordChangeHandler(event) {
-        setPassword(event.target.value)
-    }
-
     function login(event) {
         let data = JSON.stringify({
           "username": username,

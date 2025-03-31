@@ -8,7 +8,6 @@ const EditNoteForm = () => {
     const {id} = useParams(); // Get the note ID from the URL params
     const [title, setTitle] = useState('');
     const [content, setContent] = useState('');
-    const [Err, setErr] = useState()
 
     useEffect(() => {
         const fetchNote = async () => {
